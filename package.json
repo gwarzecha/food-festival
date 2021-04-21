@@ -20,6 +20,7 @@
   "homepage": "https://github.com/gwarzecha/food-festival#readme",
   "devDependencies": {
     "webpack": "^5.34.0",
+    "webpack-bundle-analyzer": "^4.4.1",
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
