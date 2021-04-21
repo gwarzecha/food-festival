@@ -168,4 +168,15 @@
       <div class="footer-copyright text-center py-3 text-white">© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.</div>        
     </footer>
 </body>
+<script>
+  /* tells the browser that a service worker is being used and where to find the relevant code */
+  (function() {
+    // checks to see if serviceWorker exists on the global navigator obj
+    if("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully."))
+        .catch(error => console.log("Service Worker registration failed:", error));
+    }
+  })();
+  </script>
 </html>
